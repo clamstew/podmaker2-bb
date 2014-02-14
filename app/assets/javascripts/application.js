@@ -15,7 +15,7 @@
 //= require foundation
 //= require underscore-min
 //= require backbone-min
-//= require_tree .
+//= require app/views/student.js
 $(function() {
   $(document).foundation();
 });
