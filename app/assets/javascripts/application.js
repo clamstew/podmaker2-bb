@@ -15,7 +15,9 @@
 //= require foundation
 //= require underscore-min
 //= require backbone-min
-//= require app/views/student.js
+//= require app/models/student
+//= require app/views/students
+
 $(function() {
   $(document).foundation();
 });
