@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require underscore
-//= require backbone
+//= require underscore-min
+//= require backbone-min
 //= require_tree .
 $(function() {
   $(document).foundation();
