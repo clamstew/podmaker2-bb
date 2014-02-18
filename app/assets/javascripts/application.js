@@ -15,8 +15,12 @@
 //= require foundation
 //= require underscore
 //= require backbone
-//= require app/models/student
-//= require app/views/students
+//= require podmaker
+//= require_tree ../templates
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require_tree ./routers
 
 window.onload = function() {
   $(document).foundation();
