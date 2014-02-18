@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Podmaker2 Bb" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Podmaker2 Bb" %>">
@@ -15,10 +16,13 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    <%# Template Files - may end up not using %>
     <%= render 'layouts/templates' %>
+    <%# Javascript from the asset pipeline %>
     <%= javascript_include_tag "application" %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag "vendor/modernizr" %>
+    <%# Include page specific js at bottom %>
+    <%= yield :javascript %>
   </body>
-
 </html>
