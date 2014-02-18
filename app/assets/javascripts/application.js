@@ -13,11 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require underscore-min
-//= require backbone-min
+//= require underscore
+//= require backbone
 //= require app/models/student
 //= require app/views/students
 
-$(function() {
+window.onload = function() {
   $(document).foundation();
-});
+};

@@ -4,10 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Podmaker2 Bb" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Podmaker2 Bb" %>">
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-    <%# Modernizr is required for Zurb Foundation %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-
+    <%= stylesheet_link_tag "application", media: "all" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -20,6 +17,8 @@
     </main>
     <%= render 'layouts/templates' %>
     <%= javascript_include_tag "application" %>
+    <%# Modernizr is required for Zurb Foundation %>
+    <%= javascript_include_tag "vendor/modernizr" %>
   </body>
 
 </html>
